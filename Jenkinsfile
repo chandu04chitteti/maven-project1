@@ -38,7 +38,12 @@ pipeline {
 		     steps {
 
 		           emailext (
-			   mail bcc: '', body: 'THIS IS AN AUTO GENERATED MAIL FROM JENKINS', cc: '', from: '', replyTo: '', subject: 'Email Report', to: 'chandudeul@gmail.com'
+			          to: 'chandudeul@gmail.com', 
+			          subject: "Email Report from - '${env.JOB_NAME}' ", 
+			          body: """!! THIS IS AN AUTO GENERATED MAIL FROM JENKINS !!
+
+		                  Thanks
+				  Tools Team."""
 				 )
 			  }
 
