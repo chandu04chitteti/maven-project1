@@ -39,7 +39,7 @@ pipeline {
 
 		           emailext (
 			   to: 'chandudeul@gmail.com', 
-			   subject: "Email Report from - '${env.JOB_NAME}' ", 
+			   subject: "Email Report", 
 			   body: """!! THIS IS AN AUTO GENERATED MAIL FROM JENKINS !!
 
 		                  Thanks
