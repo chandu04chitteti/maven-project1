@@ -27,7 +27,7 @@ pipeline {
 
 			  script{
 
-				   bat "copy target\\JenkinsWar.war \"${tomcatWeb}\\JenkinsWar.war\""
+				  bat "copy target\\myproj.war \"${tomcatWeb}\\myproj.war\""
       			           echo "Deployment Success.!!!"
       
                                 }
